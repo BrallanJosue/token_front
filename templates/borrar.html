@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Borrar Contacto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff0019;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #detalle-contacto {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .btn-danger,
+        .btn-secondary {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        #error-mensaje {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">Borrar Contacto</h1>
+
+        <div id="detalle-contacto" class="text-center">
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+        </div>
+
+        <form id="delete-contact-form">
+            <button type="button" class="btn btn-danger" onclick="borrarContacto()">Borrar</button>
+            <button type="button" class="btn btn-secondary" onclick="cancelarBorrar()">Cancelar</button>
+        </form>
+
+        <div id="error-mensaje"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../static/js/borrar.js"></script>
+</body>
+
+</html>
